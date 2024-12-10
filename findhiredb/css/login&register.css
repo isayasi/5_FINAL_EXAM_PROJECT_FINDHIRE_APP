@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1D1A31;
+    background-size: cover; /* Makes sure the background image covers the entire screen */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    color: #F08CAE;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #F08CAE;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #4D2D52;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+form p {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4D2D52;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #F08CAE;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1D1A31;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #e76e97;
+}
+
+/* Links */
+a {
+    color: #9A4C95; /* Pink color */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.2s; /* Smooth transition on hover */
+}
+
+a:hover {
+    color: #1D1A31; /* Purple color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+.haveaccount a {
+    color: #9A4C95; /* Pink color */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.2s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the "here" link */
+.haveaccount a:hover {
+    color: #1D1A31; /* Purple color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+/* Success message (status 200) */
+.success-message {
+    color: #4D2D52; /* Dark purple color for success */
+    text-align: center;
+    font-weight: bold; /* Make the success message bold */
+    background-color: #F08CAE; /* Light pink background for success */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Error message */
+.error-message {
+    color: #1D1A31; /* Dark text color for error */
+    text-align: center;
+    font-weight: bold; /* Make the error message bold */
+    background-color: #C1A5A9; /* Light beige background for error */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Messages */
+.action p {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.action p[color="green"] {
+    background: #d4edda;
+    color:  #F08CAE;
+}
+
+.action p[color="red"] {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

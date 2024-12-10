@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1D1A31;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation button */
+button {
+    background-color: #9a4c95; /* Using one of your colors */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+button:hover {
+    background-color: #F08CAE; /* Lighter shade for hover */
+}
+
+/* Navigation button */
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+
+deletebutton {
+    background-color: #9a4c95; /* Using one of your colors */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+}
+
+.deletebutton:hover {
+    background-color: #F08CAE; /* Lighter shade for hover */
+}
+
+/* Page Title and Description */
+h1 {
+    color: #C1A5A9; /* Darker shade from palette */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #C1A5A9; /* Darker shade from palette */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+p {
+    color: #C1A5A9; /* Darker color for text */
+    text-align: center;
+}
+
+/* User list section */
+section {
+    width: 30%;
+    margin: 10px auto;
+    background-color: #4D2D52;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section div {
+    background-color: #F08CAE;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section div a {
+    color: #4D2D52; /* Using a dark color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+section div span {
+    color: #9a4c95; /* Using a lighter color for the role */
+}
+
+/* Message when no users found */
+section p {
+    text-align: center;
+    font-size: 18px;
+    color: #4D2D52; /* Lighter color to indicate no users */
+}

@@ -1,0 +1,141 @@
+/* General Body Styling */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1D1A31; /* Dark background */
+    color: #C1A5A9; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2.5em;
+    color: #C1A5A9;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #C1A5A9;
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #9a4c95; /* Using one of your colors */
+    color: #1D1A31;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 10%; /* Adjust the width to 50% of the parent container */
+    display: block; /* Block-level element for automatic centering */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #F08CAE; /* Lighter shade for hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Back Button */
+button[onclick="history.back()"] {
+    background-color: #C1A5A9;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button[onclick="history.back()"]:hover {
+    background-color: #9A4C95;
+}
+
+textarea {
+    border: 1px solid #C1A5A9;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1em;
+    resize: vertical;
+    min-height: 120px;
+}
+
+textarea:focus {
+    border-color: #F08CAE;
+    outline: none;
+}
+
+input[type="file"] {
+    background-color: #9A4C95;
+    width: 50.5%;
+    margin-top: 10px;
+    margin-left: 25%;
+    color: #1D1A31;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #9A4C95;
+}
+
+input[type="file"]:focus {
+    outline: none;
+}
+
+/* Updated Button */
+button[type="submit"] {
+    background-color: #9a4c95; /* Button background */
+    color: #1D1A31; /* Button text color */
+    width: 10%; /* Button width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 10px 20px; /* Inner padding */
+    font-size: 16px; /* Adjust text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+button[type="submit"]:hover {
+    background-color: #F08CAE; /* Lighter shade */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Responsive Styling for Submit Button */
+@media screen and (max-width: 768px) {
+    button[type="submit"] {
+        width: 70%; /* Increase width on smaller screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+/* Message When Application Status Exists */
+p.application-status {
+    color: #F08CAE;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}

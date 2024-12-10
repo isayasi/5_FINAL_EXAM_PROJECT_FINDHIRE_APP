@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1D1A31; /* Dark background */
+    color: #C1A5A9; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #4D2D52; /* Dark purple background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #F08CAE; /* Soft pink color for headings */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4D2D52;
+}
+
+/* Back Button Styling */
+button {
+    background-color: #9A4C95; /* Purple background for button */
+    color: #C1A5A9; /* Light text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #F08CAE; /* Hover effect for button */
+}
+
+/* Message Display Styling */
+p strong {
+    color: #F08CAE; /* Pink color for sender names */
+}
+
+p {
+    padding: 8px;
+    border-radius: 4px;
+    margin: 5px 0;
+    background-color: #9A4C95; /* Light purple background for messages */
+}
+
+p:nth-child(odd) {
+    background-color: #C1A5A9; /* Light color for alternating message backgrounds */
+    text-align: left;
+}
+
+p:nth-child(even) {
+    text-align: right;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #9A4C95;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    background-color: #9A4C95;
+    color: #C1A5A9;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #F08CAE; /* Hover effect for send button */
+}
+
+/* Styling for no messages */
+.no-messages {
+    color: #F08CAE;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Add some responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form button[type="submit"] {
+        width: 100%;
+    }
+}
